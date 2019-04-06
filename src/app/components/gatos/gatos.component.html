@@ -1,0 +1,8 @@
+<h1>Razas de gatitos</h1>
+<hr>
+
+<div class="card-columns">
+    <!-- *ngFor="let gato of gatos ; let id = index" -->
+    <app-gato-tarjeta [gato]="gatito" [index]="id" *ngFor="let gatito of gatos ; let id = index"></app-gato-tarjeta>
+
+</div>

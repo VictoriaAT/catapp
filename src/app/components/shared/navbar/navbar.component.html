@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e4508f;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+
+        <img src="assets/img/cat.svg" width="30" height="30" class="d-inline-block align-top">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active " routerLinkActive="active">
+                <a class="nav-link " [routerLink]="['home']">Home </a>
+            </li>
+            <li class="nav-item active " routerLinkActive="active">
+                <a class="nav-link " [routerLink]="['gatos']">Razas</a>
+            </li>
+            <li class="nav-item active " routerLinkActive="active">
+                <a class="nav-link " [routerLink]="['about']">About</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 " type="search " placeholder="Buscar raza" aria-label="Buscar" (keyup.enter)="buscarGato(buscarTexto.value)" #buscarTexto>
+            <button (click)="buscarGato(buscarTexto.value)" class="btn btn-outline-dark my-2 my-sm-0 " type="button">Buscar</button>
+        </form>
+    </div>
+</nav>
